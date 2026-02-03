@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Żarty o informatykach</title>
+
+    <style>
+        body {
+            background-color: #1e1e2f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .zart {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 8px 14px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 0; /* prostokątne */
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #444;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        .odpowiedz {
+            display: none;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+
+    <script>
+        function toggle(id) {
+            const el = document.getElementById(id);
+            el.style.display = (el.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Żarty o informatykach</h1>
+
+    <div class="zart">
+        <p>1. Dlaczego informatyk nie może znaleźć żony?</p>
+        <button onclick="toggle('o1')">Pokaż / Ukryj odpowiedź</button>
+        <p id="o1" class="odpowiedz">Bo ciągle szuka idealnego interfejsu.</p>
+    </div>
+
+    <div class="zart">
+        <p>2. Ilu informatyków potrzeba, żeby wymienić żarówkę?</p>
+        <button onclick="toggle('o2')">Pokaż / Ukryj odpowiedź</button>
+        <p id="o2" class="odpowiedz">Żadnego – to problem sprzętowy.</p>
+    </div>
+
+    <div class="zart">
+        <p>3. Dlaczego programista myli Halloween z Bożym Narodzeniem?</p>
+        <button onclick="toggle('o3')">Pokaż / Ukryj odpowiedź</button>
+        <p id="o3" class="odpowiedz">Bo 31 OCT = 25 DEC.</p>
+    </div>
+
+    <div class="zart">
+        <p>4. Jak informatyk otwiera konserwę?</p>
+        <button onclick="toggle('o4')">Pokaż / Ukryj odpowiedź</button>
+        <p id="o4" class="odpowiedz">Sprawdza Stack Overflow.</p>
+    </div>
+
+    <div class="zart">
+        <p>5. Dlaczego informatyk pije zimną kawę?</p>
+        <button onclick="toggle('o5')">Pokaż / Ukryj odpowiedź</button>
+        <p id="o5" class="odpowiedz">Bo zapętlił się w kodzie.</p>
+    </div>
+
+</body>
+</html>
